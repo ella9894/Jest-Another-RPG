@@ -1,4 +1,9 @@
 const Potion = require('../lib/Potion');
+test('creates a health potion object', () => {
+    const potion = new Potion('health');
+    expect(potion.name).toBe('health');
+    expect(potion.value).toEqual(expect.any(NUmber));
+})
 test('creates a random potion object', () => {
     const potion = new Potion('health');
     expect(potion.name).toEqual(expect.any(String)); 
